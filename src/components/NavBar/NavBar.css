@@ -1,0 +1,144 @@
+.navbar {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  box-sizing: border-box;
+  grid-gap: 10px;
+  height: 80px;
+  background-color: transparent;
+  justify-self: center;
+  font-family: 'Roboto';
+  font-size: 18px;
+  line-height: 1.3;
+  font-weight: 500;
+  color: #1A1B22;
+  list-style-type: none;
+  padding-left: 100px;
+  padding-right: 80px;
+}
+
+.navbar_not-logged-in {
+  color: #FFF;
+}
+
+.navbar__title {
+  display: flex;
+  justify-self: flex-start;
+  align-self: center;
+  font-family: 'Roboto-Slab';
+  font-weight: 700;
+  line-height: 1.2;
+  font-size: 20px;
+  cursor: default;
+}
+
+.navbar__buttons-container {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  overflow: visible;
+}
+
+.navbar__buttons-container_not-logged-in {
+  justify-content: flex-end;
+}
+
+.navbar__item {
+  color: #1A1B22;
+  text-decoration: none;
+}
+
+.navbar__item:hover {
+  opacity: .5;
+}
+
+.navbar__item_active {
+  color: #1A1B22;
+  text-decoration: none;
+  border-bottom: solid 1px;
+}
+
+.navbar__button {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.3;
+  font-weight: 500;
+  color: #1A1B22;
+  border-width: 1px;
+  border-color: #1A1B22;
+  border-radius: 30px;
+  background-color: transparent;
+  padding: 0 20px 0;
+  height: 60%;
+}
+
+.navbar__button_not-logged-in {
+  color: #FFF;
+  border-color: #FFF;
+}
+
+.navbar__button-text {
+  padding-right: 10px;
+  max-width: max-content;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.navbar__button:hover {
+  opacity: .5;
+  cursor: pointer;
+}
+
+.navbar__user {
+  padding-right: 10px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 850px) {
+
+  .navbar {
+    grid-template-columns: 1fr;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .navbar_not-logged-in {
+    grid-template-columns: repeat(2, 1fr);
+    padding-left: 40px;
+    padding-right: 40px;
+    align-items: center;
+  }  
+  
+  .navbar__buttons-container {
+    height: 60%;
+  }
+
+  .navbar__button {
+    height: 100%;
+  }
+
+}
+
+@media screen and (max-width: 430px) {
+
+  .navbar {
+    grid-template-columns: 1fr;
+    padding-left: 40px;
+    padding-right: 40px;
+  } 
+
+  .navbar__item {
+    padding-right: 10px;
+  }
+
+  .navbar__item_active {
+    padding-right: 10px;
+  }
+
+}

@@ -1,0 +1,85 @@
+.places__header {
+  width: 100%;
+  background-color: white;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.places__title {
+  width: 100%;
+  font-family: 'Roboto-Slab';
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.15;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 100px;
+  background-color: white;
+}
+
+.places__create-button {
+  background-color: #2F71E5;
+  width: 360px;
+  height: 64px;
+  color: #fff;
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 18px;
+  border: none;
+  border-radius: 75px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  justify-self: center;
+}
+
+.places__create-button:hover {
+  cursor: pointer;
+  opacity: .8;
+}
+
+@media screen and (max-width: 850px) {
+  .places__header {
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+
+  .places__title {
+    max-width: 90%;
+    font-size: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .places__create-button {
+    background-color: #2F71E5;
+    width: 200px;
+    height: 44px;
+    font-size: 14px;
+    margin-top: 20px;
+  }
+  
+}
+
+@media screen and (max-width: 430px) {
+  
+    .banner_not-logged-in {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+  
+    .banner__subtitle {
+      font-family: 'Roboto';
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 1.15;
+      max-width: 65%;
+      margin-top: 0;
+      padding-top: 0;
+      margin-bottom: 20px;
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+    
+  }
