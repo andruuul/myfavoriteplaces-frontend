@@ -1,0 +1,55 @@
+.map-container {
+  height: 17rem;
+  width: 100%;
+}
+
+.map__place-title {
+  padding-left: 20px;
+  margin: 10px 0 10px;
+  font-family: 'Roboto-Slab';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #1A1B22;
+  text-overflow: ellipsis;
+  width: 95%;
+}
+
+.map__exit-button {
+  font-family: 'Roboto';
+  color: #fff;
+  font-size: 10px;
+  background-color: #2F71E5;
+  border: none;
+  border-radius: 75px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.map__exit-button:hover {
+  cursor: pointer;
+  opacity: .8;
+}
+
+.map-popup__close-button {
+  width: 33px;
+  height: 33px;
+  cursor: pointer;
+  border: none;
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0);
+  object-fit: contain;
+  outline: none;
+  background-image: url('../../images/closeButton.svg');
+  align-self: center;
+  position: relative;
+  bottom: 40px;
+  z-index: 80000;
+  overflow: visible;
+  padding: 20px;
+}
+
+.map-popup__close-button:hover {
+  opacity: .5;
+  cursor: pointer;
+}
